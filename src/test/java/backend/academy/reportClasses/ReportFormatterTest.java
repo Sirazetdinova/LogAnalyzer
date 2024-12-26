@@ -1,6 +1,7 @@
 package backend.academy.reportClasses;
 
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ReportFormatterTest {
     private ReportFormatter formatter;

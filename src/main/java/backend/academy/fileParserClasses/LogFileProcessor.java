@@ -69,12 +69,14 @@ public class LogFileProcessor {
         }
     }
 
-    private boolean isValidURL(String path) {
+    private boolean isValidURL(String path) throws IOException {
         try {
             URL url = new URL(path);
+            URLConnection connection = url.openConnection();
+            connection.connect();
             return true;
-        } catch (Exception e) {
-            return false;
+        } catch (IOException e) {
+            throw new IOException("Недоступный URL: " + path, e);
         }
     }
 

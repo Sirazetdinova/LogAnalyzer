@@ -4,18 +4,9 @@ import backend.academy.LogAnalyze;
 import java.io.IOException;
 import java.nio.file.Paths;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-/*
-root
-├── LOG
-│   ├── logs
-│   │   └── logers_7.txt
-│   ├── loges_3.txt
-│   └── logs_5.txt
-├── log_1.txt
-└── URL_copy.txt
- */
 
 class LogFileProcessorTest {
     LogAnalyze analyze;
